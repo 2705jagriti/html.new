@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box11">ima 1st box</div>
+      <div class="box">iam 2nd box</div>
+    </div>
+    <script>
+             let div = document.createElement("div")
+             div.innerText="i have been inserted"
+             div.setAttribute("class","red")
+             document.querySelector(".container").append(div)
+
+             let red= document.createElement("red")
+             red.innerText="Iam the red box"
+             red.setAttribute("class", "redded")
+             document.querySelector(".box11").before(red)
+    </script>
+  </body>
+</html>
